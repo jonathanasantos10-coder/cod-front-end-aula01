@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto WEB - HTML/CSS</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_form.css">
     <script src="../js/script.js" defer> </script>
 </head>
 
@@ -30,7 +30,8 @@
             <input type="radio" name="sexo" id="sxM" class="input-radio" required value="M"> Masculino
             <input type="radio" name="sexo" id="sxND" class="input-radio" required value="N" checked> Não declarar
 
-            <select name="estado" id="estado" class="input-txt02" required>
+            <label for="estado"> Estado </label>
+            <select name="estado" id="estado" class="select" required>
                 <option value="Al"> Alagoas</option>
                 <option value="Ba"> Bahia </option>
                 <option value="Pe"> Pernambuco </option>
@@ -61,10 +62,11 @@
             <Label for="quantidade"> Quantidade </Label>
             <input type="range" name="quantidade" id="quantidade" class="input-txt02" min="0" max="10" value="2">
 
-            <button type="submit" name="btn-enviar" id="btn-enviar" class="btn"> Enviar </button>
-            <button type="reset" name="btn-limpar" id="btn-limpar" class="btn"> Limpar </button>
-            <button id="btn" class="btn"> Botão </button>
-
+            <div id="btns">
+                <button type="submit" name="btn-enviar" id="btn-enviar" class="btn"> Enviar </button>
+                <button type="reset" name="btn-limpar" id="btn-limpar" class="btn"> Limpar </button>
+                <button id="btn" class="btn"> Botão </button>
+            </div>
 
 
         </form>
